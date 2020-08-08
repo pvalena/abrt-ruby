@@ -1,0 +1,8 @@
+summary: Run spec test suite
+
+prepare:
+    how: install
+    package: rubygem-rspec
+
+execute:
+    script: rspec spec
