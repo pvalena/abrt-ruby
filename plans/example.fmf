@@ -8,4 +8,6 @@ prepare:
     script: 'dnf install -y rubygem-rspec'
 
 execute:
-    script: rspec spec
+# Until cruncher is replaced with TMT
+#    script: rspec spec
+    script: cd ~/git-source && rspec spec
