@@ -6,8 +6,9 @@ jobs:
     - fedora-all
 actions:
   create-archive:
-  - cd abrt-ruby
-  - gem build
+  - pwd
+  - tree
+  - bash -c "set -x; gem build --debug *.gemspec"
   - bash -c "ls *.gem"
   fix-spec-file:
   - 'true'
