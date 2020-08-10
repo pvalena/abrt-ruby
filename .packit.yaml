@@ -4,3 +4,8 @@ jobs:
   metadata:
     targets:
     - fedora-all
+actions:
+  create-archive:
+  -  bash -c "gem build *.gemspec; ls *.gem"
+  fix-spec-file:
+  - 'true'
