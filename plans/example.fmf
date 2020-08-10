@@ -1,8 +1,11 @@
 summary: Run spec test suite
 
 prepare:
-    how: install
-    package: rubygem-rspec
+# Until cruncher is replaced with TMT
+#    how: install
+#    package: rubygem-rspec
+    how: shell
+    script: 'dnf install -y rubygem-rspec'
 
 execute:
     script: rspec spec
