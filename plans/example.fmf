@@ -10,4 +10,4 @@ prepare:
 execute:
 # Until cruncher is replaced with TMT
 #    script: rspec spec
-    script: cd ~/git-source && rspec spec
+    script: cd ~/git-source; rspec spec
