@@ -7,7 +7,7 @@ jobs:
 actions:
   create-archive:
   - pwd
-  - tree
+  - find -type f
   - bash -c "set -x; gem build --debug *.gemspec"
   - bash -c "ls *.gem"
   fix-spec-file:
