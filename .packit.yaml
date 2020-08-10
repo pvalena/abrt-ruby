@@ -8,5 +8,5 @@ actions:
   create-archive:
   - gem build
   - bash -c "ls *.gem"
-  get-current-version:
-  - bash -c "grep -i version *.gemspec | cut -d'\"' -f2"
+  fix-spec-file:
+  - 'true'
