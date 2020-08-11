@@ -1,4 +1,6 @@
-# Generated from abrt-0.0.2.gem by gem2rpm -*- rpm-spec -*-
+# THIS SPEC FILE IS AN OUTDATED COPY OF FEDORA ONE. USE IT ONLY FOR CI.
+# https://src.fedoraproject.org/rpms/rubygem-abrt/blob/master/f/rubygem-abrt.spec
+
 %global gem_name abrt
 
 Name: rubygem-%{gem_name}
@@ -8,8 +10,6 @@ Summary: ABRT support for Ruby
 License: MIT
 URL: http://github.com/voxik/abrt-ruby
 Source0: https://rubygems.org/gems/%{gem_name}-%{version}.gem
-# git clone https://github.com/voxik/abrt-ruby.git && cd abrt-ruby
-# git archive -v -o abrt-0.4.0-spec.tar.gz v0.4.0 spec/
 Requires: libreport-filesystem
 BuildRequires: ruby(release)
 BuildRequires: rubygems-devel
