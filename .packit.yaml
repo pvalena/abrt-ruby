@@ -7,6 +7,6 @@ jobs:
     - fedora-all
 actions:
   create-archive:
-  -  bash -c "gem build *.gemspec; ls *.gem"
+  -  bash -c "gem build *.gemspec; mv -f *.gem ci/; ls *.gem"
   fix-spec-file:
   - 'true'
