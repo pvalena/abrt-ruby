@@ -1,3 +1,4 @@
+specfile_path: ci/rubygem-abrt.spec
 jobs:
 - job: tests
   trigger: pull_request
